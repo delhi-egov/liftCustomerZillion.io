@@ -1,4 +1,4 @@
-# Delhi Government Lift Approval Process Automation System
+# Delhi Government Lift Approval Process Applicant Frontend
 ​
 This is a Angular and Express Project, it will contain:
 * **Frontend of Lift Applicant**
