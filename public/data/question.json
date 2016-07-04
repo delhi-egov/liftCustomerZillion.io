@@ -1,0 +1,109 @@
+[
+  {
+    "question" : "Name",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Address of the Applicant",
+    "type"   : "text"
+  },
+
+  {
+    "question" : "Name and Address of the agent if any",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Name of Agent",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Address of the Agent if any",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Premises where the lift is to be erected",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Whether a license has been previously issued (details to be given)",
+    "type" : "text"
+  },
+
+
+  {
+    "question" : "Type of the Lifts proposed to be erected (a sketch of the lift and erection plan should be attached",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Name and address of firm installing lift",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Type of the lift proposed to be erected",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Rated maximum speed of the lift",
+    "type" : "text"
+  },
+
+  {
+    "question" : "The makers/designer rated capacity in weight",
+    "type" : "text"
+  },
+
+  {
+    "question" : "Total weight of the lift cage",
+    "type" : "number"
+  },
+
+  {
+    "question" : "Maximum number of passengers",
+    "type" : "number"
+  },
+
+  {
+    "question" : "Weight of counterweight",
+    "type" : "number"
+  },
+
+  {
+    "question" : "Number & description, weight and size of the supporting cable",
+    "type" : "number"
+  },
+
+  {
+    "question" : "Depth of pit from the lowest part of the lift cage at the lowest floor",
+    "type" : "number"
+  },
+
+  {
+    "question" : "Top and bottom clearance",
+    "type" : "number"
+  },
+
+  {
+  "question" : "Details of construction of the overhead arrangement with the weight and size of the beam",
+  "type" : "number"
+  },
+
+  {
+    "question" : "Number of stops/opening giving details of basement(if any)",
+    "type" : "number"
+  },
+
+  {
+    "question" : "Name and contact no. of the person to be contacted at the time of inspection",
+    "type" : "number"
+  }
+
+
+]

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="applicant">
+<head>
+    <meta charset="UTF-8">
+    <title>Lift Application Form</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <!-- rippler CSS -->
+    <link rel="stylesheet" href="css/rippler.min.css">
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="angular/angular.js" ></script>
+    <script src="js/jquery.rippler.js"></script>
+</head>
+<style>
+    body {
+        padding-bottom:30px;
+    }
+</style>
+
+<body ng-controller="ApplicantController">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Zillion</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container" id="main-body">
+            <h2 class="title text-center">Form A</h2>
+            <h3 class="text-center">(Application for permission to erect a lift)</h3>
+            <h3 class="text-center">(To be submitted to the Inspector of Lifts, Delhi)</h3>
+            <div class="row">
+                <form class="container" role="form">
+                    <div class="form-group" ng-repeat="item in questions">
+                        <label >{{item.question}}</label>
+                        <input type="{{item.type}}" class="form-control"  ng-model="item.response">
+                    </div>
+                    <button class="btn btn-block btn-primary rippler rippler-bs-info" type="submit" ng-click="saveResponse()" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    <script src="js/modules/applicant.module.js"></script>
+    <script src="js/controllers/applicant.controller.js"></script>
+    <script src="js/services/question.service.js"></script>
+        <script type="text/javascript">
+            //Calling the ripper function here
+            $(document).ready(function() {
+                $(".rippler").rippler({
+                    effectClass      :  'rippler-effect'
+                    ,effectSize      :  16      // Default size (width & height)
+                    ,addElement      :  'div'   // e.g. 'svg'(feature)
+                    ,duration        :  400
+                });
+            });
+        </script>
+</body>
+</html>
