@@ -38,7 +38,7 @@ Run the server:
 ​
 ```
 Go to the app directory
-node app.js
+node server.js
 ```
 ​
 ## Built With
