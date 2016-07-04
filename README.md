@@ -38,6 +38,7 @@ Run the server:
 ​
 ```
 Go to the app directory
+node install // for installing all the modules
 node server.js
 ```
 ​
@@ -46,6 +47,7 @@ node server.js
 * Webstorm - IDE
 * MafiaPower
 ​​​
+
 ## Authors
 ​
 * **Firdoesh Ali** - *Initial work* - [Firdoesh Ali](https://github.com/Firdoesh)
